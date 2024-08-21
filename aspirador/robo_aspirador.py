@@ -44,7 +44,7 @@ class RoboAspirador(State):
 def main():
     print('Busca em profundidade iterativa')
     # Estado inicial do robô
-    state = RoboAspirador('',"ESQ", "SUJO", "SUJO")
+    state = RoboAspirador('',"DIR", "SUJO", "SUJO")
     algorithm = BuscaLargura()
     result = algorithm.search(state)
     if result != None:
