@@ -8,7 +8,7 @@ class RoboAspirador(State):
         self.operator = op
         self.posicao_robo = posicao_robo
         self.situacao_esq = situacao_esq
-        self.situacao_dir = situcao_dir
+        self.situacao_dir = situacao_dir
     
     def successors(self):
         successors = []
@@ -17,7 +17,7 @@ class RoboAspirador(State):
         successors.append(RoboAspirador('Ir para a esquerda','ESQ',self.situacao_esq,self.situacao_dir))
 
         # IR PARA A DIREITRA
-        successors.append(RoboAspirador('Ir para a direitra','DIR',self.situacao_esq,self.situacao_dir))
+        successors.append(RoboAspirador('Ir para a direita','DIR',self.situacao_esq,self.situacao_dir))
 
         # LIMPAR
         # LIMPAR A ESQUERDA
